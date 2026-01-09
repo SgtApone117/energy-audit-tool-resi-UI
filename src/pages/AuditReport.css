@@ -183,6 +183,74 @@
   font-size: 14px;
 }
 
+.photo-category {
+  margin-bottom: 2rem;
+  page-break-inside: avoid;
+}
+
+.photo-category h3 {
+  font-size: 1rem;
+  color: #0F4C81;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.photo-item {
+  border: 1px solid #E0E0E0;
+  background: #FFFFFF;
+}
+
+.photo-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: #F7F7F7;
+  border-bottom: 1px solid #E0E0E0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.photo-placeholder-text {
+  color: #CCCCCC;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.photo-caption {
+  padding: 0.5rem;
+  font-size: 13px;
+  color: #222222;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.photo-label {
+  padding: 0.25rem 0.5rem;
+  font-size: 11px;
+  color: #666666;
+  background: #F7F7F7;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
 .report-footer {
   text-align: center;
   padding-top: 2rem;

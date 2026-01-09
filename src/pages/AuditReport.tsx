@@ -193,6 +193,128 @@ export default function AuditReport() {
         </div>
 
         <div className="report-section">
+          <h2>Audit Photo Documentation (Sample)</h2>
+          <p>
+            Photographic documentation of existing conditions and recommended improvements.
+            All images shown are placeholder examples for demonstration purposes.
+          </p>
+
+          <div className="photo-category">
+            <h3>LED Lighting</h3>
+            <div className="photo-grid">
+              <div className="photo-item">
+                <div className="photo-placeholder">
+                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
+                </div>
+                <div className="photo-caption">Kitchen ceiling fixture</div>
+                <div className="photo-label">SAMPLE</div>
+              </div>
+              <div className="photo-item">
+                <div className="photo-placeholder">
+                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
+                </div>
+                <div className="photo-caption">Living room lamps</div>
+                <div className="photo-label">SAMPLE</div>
+              </div>
+              <div className="photo-item">
+                <div className="photo-placeholder">
+                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
+                </div>
+                <div className="photo-caption">Bedroom overhead lighting</div>
+                <div className="photo-label">SAMPLE</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="photo-category">
+            <h3>Air Sealing</h3>
+            <div className="photo-grid">
+              <div className="photo-item">
+                <div className="photo-placeholder">
+                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
+                </div>
+                <div className="photo-caption">Window frame gaps</div>
+                <div className="photo-label">SAMPLE</div>
+              </div>
+              <div className="photo-item">
+                <div className="photo-placeholder">
+                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
+                </div>
+                <div className="photo-caption">Door weatherstripping</div>
+                <div className="photo-label">SAMPLE</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="photo-category">
+            <h3>Smart Thermostat</h3>
+            <div className="photo-grid">
+              <div className="photo-item">
+                <div className="photo-placeholder">
+                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
+                </div>
+                <div className="photo-caption">Existing thermostat location</div>
+                <div className="photo-label">SAMPLE</div>
+              </div>
+              <div className="photo-item">
+                <div className="photo-placeholder">
+                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
+                </div>
+                <div className="photo-caption">Recommended smart thermostat</div>
+                <div className="photo-label">SAMPLE</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="photo-category">
+            <h3>Heat Pump Water Heater</h3>
+            <div className="photo-grid">
+              <div className="photo-item">
+                <div className="photo-placeholder">
+                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
+                </div>
+                <div className="photo-caption">Current water heater</div>
+                <div className="photo-label">SAMPLE</div>
+              </div>
+              <div className="photo-item">
+                <div className="photo-placeholder">
+                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
+                </div>
+                <div className="photo-caption">Installation area</div>
+                <div className="photo-label">SAMPLE</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="photo-category">
+            <h3>Water Fixtures</h3>
+            <div className="photo-grid">
+              <div className="photo-item">
+                <div className="photo-placeholder">
+                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
+                </div>
+                <div className="photo-caption">Bathroom showerhead</div>
+                <div className="photo-label">SAMPLE</div>
+              </div>
+              <div className="photo-item">
+                <div className="photo-placeholder">
+                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
+                </div>
+                <div className="photo-caption">Kitchen faucet aerator</div>
+                <div className="photo-label">SAMPLE</div>
+              </div>
+              <div className="photo-item">
+                <div className="photo-placeholder">
+                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
+                </div>
+                <div className="photo-caption">Bathroom sink fixture</div>
+                <div className="photo-label">SAMPLE</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="report-section">
           <h2>Assumptions</h2>
           <p>
             The following sample assumptions were used in this demonstration report:

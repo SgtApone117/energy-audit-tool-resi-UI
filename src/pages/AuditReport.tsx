@@ -73,19 +73,19 @@ export default function AuditReport() {
           <div className="summary-grid">
             <div className="summary-item">
               <div className="summary-item-label">Total Annual Savings</div>
-              <div className="summary-item-value">$1,380</div>
+              <div className="summary-item-value">$240</div>
             </div>
             <div className="summary-item">
               <div className="summary-item-label">Energy Reduction</div>
-              <div className="summary-item-value">6,900 kWh</div>
+              <div className="summary-item-value">1,200 kWh</div>
             </div>
             <div className="summary-item">
               <div className="summary-item-label">Available Incentives</div>
-              <div className="summary-item-value">$1,575</div>
+              <div className="summary-item-value">$150</div>
             </div>
             <div className="summary-item">
               <div className="summary-item-label">Est. Payback Period</div>
-              <div className="summary-item-value">2.8 years</div>
+              <div className="summary-item-value">1.5 years</div>
             </div>
           </div>
         </div>
@@ -119,6 +119,71 @@ export default function AuditReport() {
         </div>
 
         <div className="report-section">
+          <h2>Residential Lighting Assessment</h2>
+          <p>
+            A representative fixture sampling was conducted to assess lighting efficiency opportunities.
+            Fixture verification was performed via photographic documentation during the site visit.
+          </p>
+
+          <h3 className="subsection-title">Sampled Fixtures</h3>
+          <table className="fixtures-table">
+            <thead>
+              <tr>
+                <th>Location</th>
+                <th>Fixture Type</th>
+                <th>Current Wattage</th>
+                <th>Recommended LED</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Kitchen</td>
+                <td>Recessed Can</td>
+                <td>65W Incandescent</td>
+                <td>9W LED</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>Living Room</td>
+                <td>Table Lamp</td>
+                <td>60W Incandescent</td>
+                <td>8W LED</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Bedroom</td>
+                <td>Ceiling Fixture</td>
+                <td>75W Incandescent</td>
+                <td>10W LED</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>Bathroom</td>
+                <td>Vanity Light</td>
+                <td>40W Incandescent</td>
+                <td>6W LED</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>Hallway</td>
+                <td>Ceiling Fixture</td>
+                <td>60W Incandescent</td>
+                <td>8W LED</td>
+                <td>2</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div className="assessment-note">
+            <strong>Assessment Note:</strong> This residential lighting assessment utilized representative
+            fixture sampling methodology consistent with Home Energy Score (HES) and utility program protocols.
+            Key efficiency opportunities identified include the replacement of incandescent bulbs throughout
+            the home with ENERGY STAR certified LED equivalents.
+          </div>
+        </div>
+
+        <div className="report-section">
           <h2>Recommended Efficiency Measures</h2>
           <table className="measures-table">
             <thead>
@@ -138,39 +203,11 @@ export default function AuditReport() {
                 <td>$150</td>
                 <td>High</td>
               </tr>
-              <tr>
-                <td>Air Sealing</td>
-                <td>1,800</td>
-                <td>$360</td>
-                <td>$500</td>
-                <td>High</td>
-              </tr>
-              <tr>
-                <td>Smart Thermostat</td>
-                <td>900</td>
-                <td>$180</td>
-                <td>$100</td>
-                <td>Medium</td>
-              </tr>
-              <tr>
-                <td>Heat Pump Water Heater</td>
-                <td>2,400</td>
-                <td>$480</td>
-                <td>$750</td>
-                <td>High</td>
-              </tr>
-              <tr>
-                <td>Low-Flow Water Fixtures</td>
-                <td>600</td>
-                <td>$120</td>
-                <td>$75</td>
-                <td>Low</td>
-              </tr>
               <tr className="total-row">
                 <td><strong>Total</strong></td>
-                <td><strong>6,900</strong></td>
-                <td><strong>$1,380</strong></td>
-                <td><strong>$1,575</strong></td>
+                <td><strong>1,200</strong></td>
+                <td><strong>$240</strong></td>
+                <td><strong>$150</strong></td>
                 <td></td>
               </tr>
             </tbody>
@@ -193,10 +230,9 @@ export default function AuditReport() {
         </div>
 
         <div className="report-section">
-          <h2>Audit Photo Documentation (Sample)</h2>
+          <h2>Fixture Verification via Photos</h2>
           <p>
-            Photographic documentation of existing conditions and recommended improvements.
-            All images shown are placeholder examples for demonstration purposes.
+            Photographic documentation of representative fixtures sampled during the residential lighting assessment.
           </p>
 
           <div className="photo-category">
@@ -207,108 +243,18 @@ export default function AuditReport() {
                   <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
                 </div>
                 <div className="photo-caption">Kitchen ceiling fixture</div>
-                <div className="photo-label">SAMPLE</div>
               </div>
               <div className="photo-item">
                 <div className="photo-placeholder">
                   <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
                 </div>
                 <div className="photo-caption">Living room lamps</div>
-                <div className="photo-label">SAMPLE</div>
               </div>
               <div className="photo-item">
                 <div className="photo-placeholder">
                   <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
                 </div>
                 <div className="photo-caption">Bedroom overhead lighting</div>
-                <div className="photo-label">SAMPLE</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="photo-category">
-            <h3>Air Sealing</h3>
-            <div className="photo-grid">
-              <div className="photo-item">
-                <div className="photo-placeholder">
-                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
-                </div>
-                <div className="photo-caption">Window frame gaps</div>
-                <div className="photo-label">SAMPLE</div>
-              </div>
-              <div className="photo-item">
-                <div className="photo-placeholder">
-                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
-                </div>
-                <div className="photo-caption">Door weatherstripping</div>
-                <div className="photo-label">SAMPLE</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="photo-category">
-            <h3>Smart Thermostat</h3>
-            <div className="photo-grid">
-              <div className="photo-item">
-                <div className="photo-placeholder">
-                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
-                </div>
-                <div className="photo-caption">Existing thermostat location</div>
-                <div className="photo-label">SAMPLE</div>
-              </div>
-              <div className="photo-item">
-                <div className="photo-placeholder">
-                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
-                </div>
-                <div className="photo-caption">Recommended smart thermostat</div>
-                <div className="photo-label">SAMPLE</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="photo-category">
-            <h3>Heat Pump Water Heater</h3>
-            <div className="photo-grid">
-              <div className="photo-item">
-                <div className="photo-placeholder">
-                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
-                </div>
-                <div className="photo-caption">Current water heater</div>
-                <div className="photo-label">SAMPLE</div>
-              </div>
-              <div className="photo-item">
-                <div className="photo-placeholder">
-                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
-                </div>
-                <div className="photo-caption">Installation area</div>
-                <div className="photo-label">SAMPLE</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="photo-category">
-            <h3>Water Fixtures</h3>
-            <div className="photo-grid">
-              <div className="photo-item">
-                <div className="photo-placeholder">
-                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
-                </div>
-                <div className="photo-caption">Bathroom showerhead</div>
-                <div className="photo-label">SAMPLE</div>
-              </div>
-              <div className="photo-item">
-                <div className="photo-placeholder">
-                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
-                </div>
-                <div className="photo-caption">Kitchen faucet aerator</div>
-                <div className="photo-label">SAMPLE</div>
-              </div>
-              <div className="photo-item">
-                <div className="photo-placeholder">
-                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
-                </div>
-                <div className="photo-caption">Bathroom sink fixture</div>
-                <div className="photo-label">SAMPLE</div>
               </div>
             </div>
           </div>

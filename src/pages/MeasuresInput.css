@@ -1,0 +1,115 @@
+.measures-input {
+  max-width: 1000px;
+}
+
+.measures-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.measure-card {
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.measure-card:hover {
+  border-color: #2c5282;
+  box-shadow: 0 4px 12px rgba(44, 82, 130, 0.1);
+}
+
+.measure-card.selected {
+  border-color: #2c5282;
+  background: #eff6ff;
+  box-shadow: 0 4px 12px rgba(44, 82, 130, 0.15);
+}
+
+.measure-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.measure-icon {
+  font-size: 2.5rem;
+}
+
+.measure-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #2c5282;
+}
+
+.measure-title {
+  font-size: 1.125rem;
+  color: #1e3a5f;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.measure-description {
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.measure-photo-upload {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.photo-upload-label {
+  display: block;
+  padding: 0.75rem;
+  background: white;
+  border: 1px dashed #d1d5db;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.photo-upload-label:hover {
+  border-color: #2c5282;
+  background: #f9fafb;
+}
+
+.photo-placeholder {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.photo-uploaded {
+  color: #059669;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.photo-input {
+  display: none;
+}
+
+.measures-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.measures-actions .button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.measures-actions .button:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}

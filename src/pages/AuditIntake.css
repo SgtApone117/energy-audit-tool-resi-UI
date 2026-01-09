@@ -1,0 +1,42 @@
+.audit-intake {
+  max-width: 800px;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  color: #1e3a5f;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e5e7eb;
+  font-weight: 600;
+}
+
+.section-title:first-child {
+  margin-top: 0;
+}
+
+.form-actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.info-box {
+  background: #eff6ff;
+  border-left: 4px solid #2c5282;
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+
+.info-box h3 {
+  color: #1e3a5f;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.info-box p {
+  color: #6b7280;
+  line-height: 1.6;
+}

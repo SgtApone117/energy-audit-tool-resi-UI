@@ -1,0 +1,175 @@
+.recommendation-packages {
+  max-width: 1000px;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.package-card {
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s;
+}
+
+.package-card:hover {
+  border-color: #2c5282;
+  box-shadow: 0 8px 24px rgba(44, 82, 130, 0.15);
+  transform: translateY(-4px);
+}
+
+.package-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.package-name {
+  font-size: 1.5rem;
+  color: #1e3a5f;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.package-description {
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.package-measures {
+  background: #f9fafb;
+  padding: 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.measures-heading {
+  font-size: 0.875rem;
+  color: #1e3a5f;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.measures-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.measures-list li {
+  padding: 0.5rem 0;
+  color: #374151;
+  display: flex;
+  align-items: center;
+}
+
+.measures-list li::before {
+  content: '✓';
+  color: #059669;
+  font-weight: bold;
+  margin-right: 0.75rem;
+}
+
+.package-stats {
+  border-top: 2px solid #e5e7eb;
+  padding-top: 1.25rem;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.625rem 0;
+}
+
+.stat-row.highlight {
+  background: #eff6ff;
+  margin: 0.5rem -1rem 0;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+}
+
+.stat-label {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.stat-value {
+  color: #1e3a5f;
+  font-weight: 600;
+}
+
+.stat-row.highlight .stat-value {
+  color: #2c5282;
+  font-size: 1.125rem;
+}
+
+.comparison-table-section {
+  margin: 2rem 0;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  color: #1e3a5f;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.comparison-table th {
+  background: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.comparison-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.comparison-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.package-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #1e3a5f;
+}
+
+.package-icon-small {
+  font-size: 1.5rem;
+}
+
+.disclaimer-box {
+  background: #fef3c7;
+  border-left: 4px solid #f59e0b;
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  margin: 2rem 0;
+  color: #78350f;
+  line-height: 1.6;
+}
+
+.packages-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}

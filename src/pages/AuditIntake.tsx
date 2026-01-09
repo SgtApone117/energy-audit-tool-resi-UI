@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './AuditIntake.css'
 
@@ -13,6 +13,14 @@ export default function AuditIntake() {
     yearBuilt: '',
     utility: 'eversource',
   })
+  const [lightingPhotos, setLightingPhotos] = useState<string[]>([])
+
+  useEffect(() => {
+    const saved = localStorage.getItem('lightingPhotos')
+    if (saved) {
+      setLightingPhotos(JSON.parse(saved))
+    }
+  }, [])
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -24,6 +32,36 @@ export default function AuditIntake() {
       ...formData,
       [e.target.name]: e.target.value,
     })
+  }
+
+  const handlePhotoUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const files = e.target.files
+    if (!files) return
+
+    const newPhotos: string[] = []
+    const filesToProcess = Math.min(files.length, 3 - lightingPhotos.length)
+
+    for (let i = 0; i < filesToProcess; i++) {
+      const file = files[i]
+      const reader = new FileReader()
+      reader.onloadend = () => {
+        const result = reader.result as string
+        newPhotos.push(result)
+
+        if (newPhotos.length === filesToProcess) {
+          const updated = [...lightingPhotos, ...newPhotos].slice(0, 3)
+          setLightingPhotos(updated)
+          localStorage.setItem('lightingPhotos', JSON.stringify(updated))
+        }
+      }
+      reader.readAsDataURL(file)
+    }
+  }
+
+  const removePhoto = (index: number) => {
+    const updated = lightingPhotos.filter((_, i) => i !== index)
+    setLightingPhotos(updated)
+    localStorage.setItem('lightingPhotos', JSON.stringify(updated))
   }
 
   return (
@@ -159,6 +197,40 @@ export default function AuditIntake() {
                 <option value="eversource">Eversource Energy</option>
                 <option value="ui">United Illuminating (UI)</option>
               </select>
+            </div>
+          </div>
+
+          <h2 className="section-title">LED Lighting Photos</h2>
+          <p className="section-description">Upload up to 3 photos of existing lighting fixtures</p>
+
+          <div className="photo-upload-section">
+            <div className="photo-upload-grid">
+              {lightingPhotos.map((photo, index) => (
+                <div key={index} className="photo-preview">
+                  <img src={photo} alt={`Lighting fixture ${index + 1}`} />
+                  <button
+                    type="button"
+                    className="remove-photo-btn"
+                    onClick={() => removePhoto(index)}
+                  >
+                    ×
+                  </button>
+                </div>
+              ))}
+              {lightingPhotos.length < 3 && (
+                <label className="photo-upload-box">
+                  <input
+                    type="file"
+                    accept="image/*"
+                    multiple
+                    onChange={handlePhotoUpload}
+                    style={{ display: 'none' }}
+                  />
+                  <div className="upload-placeholder">
+                    <span>+ Add Photo</span>
+                  </div>
+                </label>
+              )}
             </div>
           </div>
 

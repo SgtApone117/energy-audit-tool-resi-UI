@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import jsPDF from 'jspdf'
 import html2canvas from 'html2canvas'
@@ -7,6 +7,14 @@ import './AuditReport.css'
 export default function AuditReport() {
   const navigate = useNavigate()
   const reportRef = useRef<HTMLDivElement>(null)
+  const [lightingPhotos, setLightingPhotos] = useState<string[]>([])
+
+  useEffect(() => {
+    const saved = localStorage.getItem('lightingPhotos')
+    if (saved) {
+      setLightingPhotos(JSON.parse(saved))
+    }
+  }, [])
 
   const handleDownloadPDF = async () => {
     if (!reportRef.current) return
@@ -238,24 +246,35 @@ export default function AuditReport() {
           <div className="photo-category">
             <h3>LED Lighting</h3>
             <div className="photo-grid">
-              <div className="photo-item">
-                <div className="photo-placeholder">
-                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
-                </div>
-                <div className="photo-caption">Kitchen ceiling fixture</div>
-              </div>
-              <div className="photo-item">
-                <div className="photo-placeholder">
-                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
-                </div>
-                <div className="photo-caption">Living room lamps</div>
-              </div>
-              <div className="photo-item">
-                <div className="photo-placeholder">
-                  <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
-                </div>
-                <div className="photo-caption">Bedroom overhead lighting</div>
-              </div>
+              {lightingPhotos.length > 0 ? (
+                lightingPhotos.map((photo, index) => (
+                  <div key={index} className="photo-item">
+                    <img src={photo} alt={`Lighting fixture ${index + 1}`} className="photo-image" />
+                    <div className="photo-caption">Lighting fixture {index + 1}</div>
+                  </div>
+                ))
+              ) : (
+                <>
+                  <div className="photo-item">
+                    <div className="photo-placeholder">
+                      <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
+                    </div>
+                    <div className="photo-caption">Kitchen ceiling fixture</div>
+                  </div>
+                  <div className="photo-item">
+                    <div className="photo-placeholder">
+                      <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
+                    </div>
+                    <div className="photo-caption">Living room lamps</div>
+                  </div>
+                  <div className="photo-item">
+                    <div className="photo-placeholder">
+                      <span className="photo-placeholder-text">PLACEHOLDER IMAGE</span>
+                    </div>
+                    <div className="photo-caption">Bedroom overhead lighting</div>
+                  </div>
+                </>
+              )}
             </div>
           </div>
         </div>

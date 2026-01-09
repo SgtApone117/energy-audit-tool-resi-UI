@@ -5,28 +5,26 @@
 .measures-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
   margin-bottom: 2rem;
 }
 
 .measure-card {
   background: white;
-  border: 2px solid #e5e7eb;
-  border-radius: 8px;
+  border: 1px solid #E0E0E0;
   padding: 1.5rem;
-  transition: all 0.2s;
   cursor: pointer;
 }
 
 .measure-card:hover {
-  border-color: #2c5282;
-  box-shadow: 0 4px 12px rgba(44, 82, 130, 0.1);
+  border-color: #0073BB;
+  background-color: #F7F7F7;
 }
 
 .measure-card.selected {
-  border-color: #2c5282;
-  background: #eff6ff;
-  box-shadow: 0 4px 12px rgba(44, 82, 130, 0.15);
+  border-color: #0073BB;
+  border-width: 2px;
+  background: #FFFFFF;
 }
 
 .measure-header {
@@ -37,59 +35,57 @@
 }
 
 .measure-icon {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .measure-checkbox input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   cursor: pointer;
-  accent-color: #2c5282;
+  accent-color: #0073BB;
 }
 
 .measure-title {
-  font-size: 1.125rem;
-  color: #1e3a5f;
+  font-size: 1rem;
+  color: #0F4C81;
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
 .measure-description {
-  color: #6b7280;
-  font-size: 0.875rem;
+  color: #666666;
+  font-size: 14px;
   line-height: 1.5;
 }
 
 .measure-photo-upload {
   margin-top: 1rem;
   padding-top: 1rem;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid #E0E0E0;
 }
 
 .photo-upload-label {
   display: block;
-  padding: 0.75rem;
+  padding: 0.625rem;
   background: white;
-  border: 1px dashed #d1d5db;
-  border-radius: 6px;
+  border: 1px dashed #CCCCCC;
   text-align: center;
   cursor: pointer;
-  transition: all 0.2s;
 }
 
 .photo-upload-label:hover {
-  border-color: #2c5282;
-  background: #f9fafb;
+  border-color: #0073BB;
+  background: #F7F7F7;
 }
 
 .photo-placeholder {
-  color: #6b7280;
-  font-size: 0.875rem;
+  color: #666666;
+  font-size: 13px;
 }
 
 .photo-uploaded {
-  color: #059669;
-  font-size: 0.875rem;
+  color: #0F4C81;
+  font-size: 13px;
   font-weight: 500;
 }
 
@@ -110,6 +106,5 @@
 }
 
 .measures-actions .button:disabled:hover {
-  transform: none;
-  box-shadow: none;
+  background-color: #CCCCCC;
 }

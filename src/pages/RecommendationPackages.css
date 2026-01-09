@@ -5,52 +5,50 @@
 .packages-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
   margin-bottom: 2rem;
 }
 
 .package-card {
   background: white;
-  border: 2px solid #e5e7eb;
-  border-radius: 12px;
+  border: 1px solid #E0E0E0;
   padding: 2rem;
-  transition: all 0.3s;
 }
 
 .package-card:hover {
-  border-color: #2c5282;
-  box-shadow: 0 8px 24px rgba(44, 82, 130, 0.15);
-  transform: translateY(-4px);
+  border-color: #0073BB;
+  background: #F7F7F7;
 }
 
 .package-icon {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
 .package-name {
-  font-size: 1.5rem;
-  color: #1e3a5f;
+  font-size: 1.25rem;
+  color: #0F4C81;
   margin-bottom: 0.75rem;
   font-weight: 700;
 }
 
 .package-description {
-  color: #6b7280;
+  color: #666666;
   margin-bottom: 1.5rem;
   line-height: 1.5;
+  font-size: 14px;
 }
 
 .package-measures {
-  background: #f9fafb;
+  background: #F7F7F7;
   padding: 1.25rem;
-  border-radius: 8px;
+  border: 1px solid #E0E0E0;
   margin-bottom: 1.5rem;
 }
 
 .measures-heading {
-  font-size: 0.875rem;
-  color: #1e3a5f;
+  font-size: 13px;
+  color: #0F4C81;
   font-weight: 600;
   margin-bottom: 0.75rem;
   text-transform: uppercase;
@@ -65,20 +63,21 @@
 
 .measures-list li {
   padding: 0.5rem 0;
-  color: #374151;
+  color: #222222;
   display: flex;
   align-items: center;
+  font-size: 14px;
 }
 
 .measures-list li::before {
   content: '✓';
-  color: #059669;
+  color: #0F4C81;
   font-weight: bold;
   margin-right: 0.75rem;
 }
 
 .package-stats {
-  border-top: 2px solid #e5e7eb;
+  border-top: 1px solid #E0E0E0;
   padding-top: 1.25rem;
 }
 
@@ -89,25 +88,25 @@
 }
 
 .stat-row.highlight {
-  background: #eff6ff;
+  background: #F7F7F7;
   margin: 0.5rem -1rem 0;
   padding: 0.75rem 1rem;
-  border-radius: 6px;
+  border: 1px solid #E0E0E0;
 }
 
 .stat-label {
-  color: #6b7280;
-  font-size: 0.875rem;
+  color: #666666;
+  font-size: 14px;
 }
 
 .stat-value {
-  color: #1e3a5f;
+  color: #0F4C81;
   font-weight: 600;
 }
 
 .stat-row.highlight .stat-value {
-  color: #2c5282;
-  font-size: 1.125rem;
+  color: #0F4C81;
+  font-size: 1rem;
 }
 
 .comparison-table-section {
@@ -115,8 +114,8 @@
 }
 
 .section-title {
-  font-size: 1.25rem;
-  color: #1e3a5f;
+  font-size: 1.125rem;
+  color: #0F4C81;
   margin-bottom: 1.5rem;
   font-weight: 600;
 }
@@ -124,25 +123,25 @@
 .comparison-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.9375rem;
+  font-size: 14px;
 }
 
 .comparison-table th {
-  background: #f3f4f6;
-  color: #374151;
+  background: #F7F7F7;
+  color: #222222;
   font-weight: 600;
   padding: 0.75rem 1rem;
   text-align: left;
-  border-bottom: 2px solid #e5e7eb;
+  border: 1px solid #E0E0E0;
 }
 
 .comparison-table td {
   padding: 0.75rem 1rem;
-  border-bottom: 1px solid #e5e7eb;
+  border: 1px solid #E0E0E0;
 }
 
 .comparison-table tbody tr:hover {
-  background: #f9fafb;
+  background: #F7F7F7;
 }
 
 .package-name-cell {
@@ -150,21 +149,22 @@
   align-items: center;
   gap: 0.5rem;
   font-weight: 600;
-  color: #1e3a5f;
+  color: #0F4C81;
 }
 
 .package-icon-small {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .disclaimer-box {
-  background: #fef3c7;
-  border-left: 4px solid #f59e0b;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-left: 3px solid #0073BB;
   padding: 1rem 1.5rem;
-  border-radius: 6px;
   margin: 2rem 0;
-  color: #78350f;
+  color: #222222;
   line-height: 1.6;
+  font-size: 14px;
 }
 
 .packages-actions {

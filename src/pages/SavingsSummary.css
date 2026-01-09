@@ -5,32 +5,31 @@
 .summary-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
   margin-bottom: 2rem;
 }
 
 .summary-card {
-  background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+  background: #0F4C81;
   color: white;
   padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #0073BB;
 }
 
 .summary-label {
-  font-size: 0.875rem;
+  font-size: 13px;
   opacity: 0.9;
   margin-bottom: 0.5rem;
 }
 
 .summary-value {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
 }
 
 .section-title {
-  font-size: 1.25rem;
-  color: #1e3a5f;
+  font-size: 1.125rem;
+  color: #0F4C81;
   margin-bottom: 1.5rem;
   font-weight: 600;
 }
@@ -42,75 +41,79 @@
 .savings-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.9375rem;
+  font-size: 14px;
 }
 
 .savings-table th {
-  background: #f3f4f6;
-  color: #374151;
+  background: #F7F7F7;
+  color: #222222;
   font-weight: 600;
   padding: 0.75rem 1rem;
   text-align: left;
-  border-bottom: 2px solid #e5e7eb;
+  border: 1px solid #E0E0E0;
 }
 
 .savings-table td {
   padding: 0.75rem 1rem;
-  border-bottom: 1px solid #e5e7eb;
+  border: 1px solid #E0E0E0;
 }
 
 .savings-table tbody tr:hover {
-  background: #f9fafb;
+  background: #F7F7F7;
 }
 
 .measure-name {
   font-weight: 500;
-  color: #1e3a5f;
+  color: #0F4C81;
 }
 
 .total-row {
-  background: #f3f4f6;
+  background: #F7F7F7;
   font-weight: 600;
 }
 
 .total-row td {
-  border-top: 2px solid #2c5282;
-  border-bottom: 2px solid #2c5282;
+  border-top: 2px solid #0F4C81;
+  border-bottom: 2px solid #0F4C81;
 }
 
 .priority-badge {
   display: inline-block;
   padding: 0.25rem 0.625rem;
-  border-radius: 4px;
-  font-size: 0.75rem;
+  border: 1px solid #CCCCCC;
+  font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .priority-high {
-  background: #fef3c7;
-  color: #92400e;
+  background: #FFFFFF;
+  color: #0F4C81;
+  border-color: #0F4C81;
 }
 
 .priority-medium {
-  background: #dbeafe;
-  color: #1e40af;
+  background: #FFFFFF;
+  color: #0073BB;
+  border-color: #0073BB;
 }
 
 .priority-low {
-  background: #f3f4f6;
-  color: #6b7280;
+  background: #F7F7F7;
+  color: #666666;
+  border-color: #CCCCCC;
 }
 
 .disclaimer-box {
-  background: #fef3c7;
-  border-left: 4px solid #f59e0b;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-left: 3px solid #0073BB;
   padding: 1rem 1.5rem;
-  border-radius: 6px;
   margin: 2rem 0;
-  color: #78350f;
+  color: #222222;
   line-height: 1.6;
+  font-size: 14px;
 }
 
 .summary-actions {
